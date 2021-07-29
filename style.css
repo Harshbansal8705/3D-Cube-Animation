@@ -1,0 +1,141 @@
+body {
+    background-color: black;
+}
+
+div.front {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    opacity: 0.5;
+    transform-origin: center center -100px;
+    transform: translateX(500px) translateY(200px) rotate3d(1, 1, 0, 45deg);
+    animation: animateFront 3s linear alternate infinite;
+}
+
+@keyframes animateFront {
+    from {
+        transform-origin: center center -100px;
+        transform: translateX(500px) translateY(200px);
+    }
+
+    to {
+        transform-origin: center center -100px;
+        transform: translateX(500px) translateY(200px) rotate3d(1, 1, 0, 45deg);
+    }
+}
+
+div.back {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    opacity: 0.5;
+    transform-origin: center center 100px;
+    transform: translateX(500px) translateY(200px) rotateX(180deg) rotate3d(1, -1, 0, 45deg);
+    animation: animateBack 3s linear alternate infinite;
+}
+
+@keyframes animateBack {
+    from {
+        transform-origin: center center 100px;
+        transform: translateX(500px) translateY(200px) rotateY(180deg);
+    }
+
+    to {
+        transform-origin: center center 100px;
+        transform: translateX(500px) translateY(200px) rotateY(180deg) rotate3d(1, -1, 0, 45deg);
+    }
+}
+
+div.top {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    opacity: 0.5;
+    transform-origin: center center -100px;
+    transform: translateX(500px) translateY(200px) rotateX(90deg) rotate3d(1, 0, -1, 45deg);
+    animation: animateTop 3s linear alternate infinite;
+}
+
+@keyframes animateTop {
+    from {
+        transform-origin: center center -100px;
+        transform: translateX(500px) translateY(200px) rotateX(90deg);
+    }
+
+    to {
+        transform-origin: center center -100px;
+        transform: translateX(500px) translateY(200px) rotateX(90deg) rotate3d(1, 0, -1, 45deg);
+    }
+}
+
+div.bottom {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    opacity: 0.5;
+    transform-origin: center center -100px;
+    transform: translateX(500px) translateY(200px) rotateX(-90deg) rotate3d(1, 0, 1, 45deg);
+    animation: animateBottom 3s linear alternate infinite;
+}
+
+@keyframes animateBottom {
+    from {
+        transform-origin: center center -100px;
+        transform: translateX(500px) translateY(200px) rotateX(-90deg);
+    }
+
+    to {
+        transform-origin: center center -100px;
+        transform: translateX(500px) translateY(200px) rotateX(-90deg) rotate3d(1, 0, 1, 45deg);
+    }
+}
+
+div.right {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    opacity: 0.5;
+    transform-origin: center center -100px;
+    transform: translateX(500px) translateY(200px) rotateY(90deg) rotate3d(0, 1, 1, 45deg);
+    animation: animateRight 3s linear alternate infinite;
+}
+
+@keyframes animateRight {
+    from {
+        transform-origin: center center -100px;
+        transform: translateX(500px) translateY(200px) rotateY(90deg);
+    }
+
+    to {
+        transform-origin: center center -100px;
+        transform: translateX(500px) translateY(200px) rotateY(90deg) rotate3D(0, 1, 1, 45deg);
+    }
+}
+
+div.left {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    opacity: 0.5;
+    transform-origin: center center -100px;
+    transform: translateX(500px) translateY(200px) rotateY(-90deg) rotate3d(0, -1, 1, 45deg);
+    animation: animateLeft 3s linear alternate infinite;
+}
+
+@keyframes animateLeft {
+    from {
+        transform-origin: center center -100px;
+        transform: translateX(500px) translateY(200px) rotateY(-90deg);
+    }
+
+    to {
+        transform-origin: center center -100px;
+        transform: translateX(500px) translateY(200px) rotateY(-90deg) rotate3d(0, -1, 1, 45deg);
+    }
+}
